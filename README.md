@@ -1,0 +1,1 @@
+# Learning-from-Majority-Label-A-Novel-Problem-in-Multi-class-Multiple-Instance-Learning
