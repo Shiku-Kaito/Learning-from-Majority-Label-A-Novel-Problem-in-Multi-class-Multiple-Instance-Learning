@@ -29,7 +29,8 @@ python ./make_bag/crossvalidation_LIMUC.py
 python ./make_bag/LIMUC_bag_time_ordering.py
 ```
 
-# Step1: Training the Counting Network. The trained model is used as a pre-trained model in MPEM in the next step.
+# Step1: Training the Counting Network. 
+The trained model is used as a pre-trained model in MPEM in the next step.
 ```
 python ./script_supplementary/main.py --non_pos_mask_rate 0.1 --module "Count" --temper1 0.1 --temper2 0.1 --dataset "cifar10" --classes 10 --is_evaluation 0
 ```
