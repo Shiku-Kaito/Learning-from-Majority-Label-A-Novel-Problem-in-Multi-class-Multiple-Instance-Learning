@@ -30,12 +30,13 @@ python ./make_bag/LIMUC_bag_time_ordering.py
 ```
 
 # Step1: Training the Counting Network. 
-The trained model is used as a pre-trained model in MPEM in the next step.
+Training the Counting Network. The trained model is used as a pre-trained model in MPEM in the next step.
 ```
 python ./script_supplementary/main.py --non_pos_mask_rate 0.1 --module "Count" --temper1 0.1 --temper2 0.1 --dataset "cifar10" --classes 10 --is_evaluation 0
 ```
 
-# Step2: Training the model using bags in which the majority proportion has been enhanced by MPEM, with the removal ratio 'r' ranging from 0.1 to 1.0.
+# Step2: Majority Proportion Enhancement Module.
+Training the model using bags in which the majority proportion has been enhanced by MPEM, with the removal ratio 'r' ranging from 0.1 to 1.0.
 ```
 python ./script_supplementary/main.py --non_pos_mask_rate 0.1 --module "MPEM" --dataset "cifar10" --classes 10 --is_evaluation 0
 python ./script_supplementary/main.py --non_pos_mask_rate 0.2 --module "MPEM" --dataset "cifar10" --classes 10 --is_evaluation 0
@@ -49,7 +50,8 @@ python ./script_supplementary/main.py --non_pos_mask_rate 0.9 --module "MPEM" --
 python ./script_supplementary/main.py --non_pos_mask_rate 1.0 --module "MPEM" --dataset "cifar10" --classes 10 --is_evaluation 0
 ```
 
-# Step3: Selecting the optimal removal ratio based on the validation loss, and performing inference on the test data using the model trained with the selected ratio.
+# Step3: Selecting the optimal removal ratio $r$.
+Selecting the optimal removal ratio based on the validation loss, and performing inference on the test data using the model trained with the selected ratio.
 ```
 python ./script_supplementary/select_optimal_k_main.py --module "MPEM" --dataset "cifar10" --classes 10 
 ```
