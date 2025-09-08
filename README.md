@@ -57,8 +57,7 @@ python ./script_supplementary/select_optimal_k_main.py --module "MPEM" --dataset
 ```
 
 # Citation
-If you find this repository helpful, please consider citing://
-(I am currently displaying the arXiv BibTeX entry, but I will replace it with the official citation from the Pattern Recognition journal once it becomes available.)
+If you find this repository helpful, please consider citing:
 ```
 @article{kaito2025learning,
   title={Learning from Majority Label: A Novel Problem in Multi-class Multiple-Instance Learning},
@@ -67,6 +66,7 @@ If you find this repository helpful, please consider citing://
   year={2025}
 }
 ```
+I am currently displaying the arXiv BibTeX entry, but I will replace it with the official citation from the Pattern Recognition journal once it becomes available.
 
 # Author
 @ Shiku Kaito  
