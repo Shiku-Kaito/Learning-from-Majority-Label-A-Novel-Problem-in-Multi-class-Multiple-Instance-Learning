@@ -57,8 +57,7 @@ python ./script_supplementary/select_optimal_k_main.py --module "MPEM" --dataset
 ```
 
 # Citation
-If you find this repository helpful, please consider citing:
-
+If you find this repository helpful, please consider citing://
 (I am currently displaying the arXiv BibTeX entry, but I will replace it with the official citation from the Pattern Recognition journal once it becomes available.)
 ```
 @article{kaito2025learning,
